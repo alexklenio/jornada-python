@@ -1,5 +1,6 @@
 import pyautogui
 from time import sleep
+import pandas as pd
 
 #https://dlp.hashtagtreinamentos.com/python/intensivao/login
 
@@ -43,4 +44,7 @@ pyautogui.press("tab")
 pyautogui.press("enter")
 sleep(3)
 pyautogui.click(x=850, y=362)
+
+
+tabela = pd.read_csv("produtos.csv")
 
